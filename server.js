@@ -10,11 +10,36 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "admin123";
 
-app.use(helmet());
-app.use(cors({
-  origin: process.env.FRONTEND_URL ? process.env.FRONTEND_URL.split(",") : true,
+function cleanOrigin(origin) {
+  return String(origin || "").trim().replace(/\/$/, "");
+}
+
+const allowedOrigins = (process.env.FRONTEND_URL || "")
+  .split(",")
+  .map(cleanOrigin)
+  .filter(Boolean);
+
+const corsOptions = {
+  origin(origin, callback) {
+    // Allow server-to-server requests, curl, health checks, and same-origin requests with no Origin header.
+    if (!origin) return callback(null, true);
+
+    // If FRONTEND_URL is not set, allow all origins. This is useful while testing.
+    if (allowedOrigins.length === 0) return callback(null, true);
+
+    const requestOrigin = cleanOrigin(origin);
+    if (allowedOrigins.includes(requestOrigin)) return callback(null, true);
+
+    return callback(new Error(`CORS blocked origin: ${origin}`));
+  },
   credentials: true,
-}));
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "x-admin-password"],
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
+app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(express.json({ limit: "1mb" }));
 
 function shuffle(array) {
@@ -35,15 +60,26 @@ function requireAdmin(req, res, next) {
 }
 
 app.get("/", (_req, res) => res.json({ ok: true, service: "MCRC Vetting Backend" }));
+app.get("/api/health", (_req, res) => res.json({ ok: true, service: "MCRC Vetting Backend" }));
 
 app.get("/api/settings", async (_req, res) => {
-  const result = await query("SELECT value FROM settings WHERE key = 'round_config'");
-  res.json(result.rows[0]?.value || {});
+  try {
+    const result = await query("SELECT value FROM settings WHERE key = 'round_config'");
+    res.json(result.rows[0]?.value || {});
+  } catch (error) {
+    console.error("Error loading settings:", error);
+    res.status(500).json({ error: "Failed to load settings. Check DATABASE_URL and migrations." });
+  }
 });
 
 app.get("/api/categories", async (_req, res) => {
-  const result = await query("SELECT DISTINCT category FROM questions WHERE round = 2 AND is_active = TRUE ORDER BY category");
-  res.json(result.rows.map((r) => r.category));
+  try {
+    const result = await query("SELECT DISTINCT category FROM questions WHERE round = 2 AND is_active = TRUE ORDER BY category");
+    res.json(result.rows.map((r) => r.category));
+  } catch (error) {
+    console.error("Error loading categories:", error);
+    res.status(500).json({ error: "Failed to load categories. Check DATABASE_URL and seeded questions." });
+  }
 });
 
 app.post("/api/candidates/start", async (req, res) => {
@@ -302,4 +338,22 @@ app.put("/api/admin/settings", requireAdmin, async (req, res) => {
   res.json({ saved: true });
 });
 
-app.listen(PORT, () => console.log(`MCRC Vetting backend running on port ${PORT}`));
+app.use((error, _req, res, _next) => {
+  console.error("Unhandled API error:", error);
+  res.status(error.message?.startsWith("CORS blocked") ? 403 : 500).json({
+    error: error.message || "Server error",
+  });
+});
+
+process.on("unhandledRejection", (reason) => {
+  console.error("Unhandled promise rejection:", reason);
+});
+
+process.on("uncaughtException", (error) => {
+  console.error("Uncaught exception:", error);
+});
+
+app.listen(PORT, () => {
+  console.log(`MCRC Vetting backend running on port ${PORT}`);
+  console.log("Allowed frontend origins:", allowedOrigins.length ? allowedOrigins : "all origins allowed");
+});
