@@ -201,6 +201,75 @@ app.get("/api/admin/leaderboard", requireAdmin, async (_req, res) => {
   res.json(result.rows);
 });
 
+// Get full candidate performance with answers shown beside each question
+app.get("/api/admin/candidates/:id/performance", requireAdmin, async (req, res) => {
+  try {
+    const candidateId = req.params.id;
+
+    const candidateResult = await query(
+      `SELECT id, full_name AS "fullName", round2_category AS "round2Category",
+              total_score AS "totalScore", total_possible AS "totalPossible",
+              status, started_at AS "startedAt", completed_at AS "completedAt"
+       FROM candidates
+       WHERE id = $1`,
+      [candidateId]
+    );
+
+    if (candidateResult.rows.length === 0) {
+      return res.status(404).json({ error: "Candidate not found." });
+    }
+
+    const answersResult = await query(
+      `SELECT a.round,
+              a.question_id AS "questionId",
+              a.answer_text AS "answerText",
+              a.is_skipped AS "isSkipped",
+              a.is_correct AS "isCorrect",
+              a.score,
+              a.answered_at AS "answeredAt",
+              q.question_text AS "questionText",
+              q.correct_answer AS "correctAnswer",
+              q.marks,
+              q.question_type AS "questionType",
+              q.category
+       FROM answers a
+       JOIN questions q ON q.id = a.question_id
+       WHERE a.candidate_id = $1
+       ORDER BY a.round ASC, a.answered_at ASC`,
+      [candidateId]
+    );
+
+    res.json({
+      candidate: candidateResult.rows[0],
+      answers: answersResult.rows,
+    });
+  } catch (error) {
+    console.error("Error fetching candidate performance:", error);
+    res.status(500).json({ error: "Failed to fetch candidate performance." });
+  }
+});
+
+// Clear leaderboard, candidate answers, and assigned randomized question sessions
+app.delete("/api/admin/leaderboard", requireAdmin, async (_req, res) => {
+  const client = await pool.connect();
+
+  try {
+    await client.query("BEGIN");
+    await client.query("DELETE FROM answers");
+    await client.query("DELETE FROM candidate_round_questions");
+    await client.query("DELETE FROM candidates");
+    await client.query("COMMIT");
+
+    res.json({ message: "Leaderboard cleared successfully." });
+  } catch (error) {
+    await client.query("ROLLBACK");
+    console.error("Error clearing leaderboard:", error);
+    res.status(500).json({ error: "Failed to clear leaderboard." });
+  } finally {
+    client.release();
+  }
+});
+
 app.get("/api/admin/candidates/:id", requireAdmin, async (req, res) => {
   const candidateResult = await query(
     `SELECT id, full_name AS "fullName", round2_category AS "round2Category",
