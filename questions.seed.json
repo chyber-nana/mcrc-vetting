@@ -1,0 +1,1702 @@
+[
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which firmware usually initializes hardware before the operating system loads?",
+    "options": [
+      "BIOS/UEFI",
+      "Printer driver",
+      "Word processor",
+      "Spreadsheet"
+    ],
+    "correct_answer": "BIOS/UEFI",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What does POST check during startup?",
+    "options": [
+      "Essential hardware",
+      "Document grammar",
+      "Internet speed",
+      "Battery percentage"
+    ],
+    "correct_answer": "Essential hardware",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which key usually moves the cursor to the beginning of a line?",
+    "options": [
+      "Home",
+      "End",
+      "Insert",
+      "Page Down"
+    ],
+    "correct_answer": "Home",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What does Ctrl + Left Arrow usually do in text editing?",
+    "options": [
+      "Moves cursor one word backward",
+      "Deletes one word",
+      "Moves cursor one line down",
+      "Opens print dialog"
+    ],
+    "correct_answer": "Moves cursor one word backward",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which port commonly carries digital audio and video together?",
+    "options": [
+      "HDMI",
+      "VGA",
+      "PS/2",
+      "RJ11"
+    ],
+    "correct_answer": "HDMI",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which logic gate gives output 1 only when all inputs are 1?",
+    "options": [
+      "AND",
+      "OR",
+      "NOT",
+      "XOR"
+    ],
+    "correct_answer": "AND",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which material is commonly used as FDM 3D printer filament?",
+    "options": [
+      "PLA",
+      "BIOS",
+      "CMOS",
+      "HDMI"
+    ],
+    "correct_answer": "PLA",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Who is often called the father of the computer?",
+    "options": [
+      "Charles Babbage",
+      "Alan Turing",
+      "Bill Gates",
+      "Tim Berners-Lee"
+    ],
+    "correct_answer": "Charles Babbage",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which unit is the basic unit of quantum information?",
+    "options": [
+      "Qubit",
+      "Byte",
+      "Pixel",
+      "Sector"
+    ],
+    "correct_answer": "Qubit",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What does RAM stand for?",
+    "options": [
+      "Random Access Memory",
+      "Read Access Module",
+      "Rapid Analog Memory",
+      "Remote Application Machine"
+    ],
+    "correct_answer": "Random Access Memory",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which software manages computer hardware and provides services to apps?",
+    "options": [
+      "Operating system",
+      "Presentation software",
+      "Image editor",
+      "Web browser only"
+    ],
+    "correct_answer": "Operating system",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which cable connector is commonly used for wired Ethernet?",
+    "options": [
+      "RJ45",
+      "HDMI",
+      "VGA",
+      "USB-A"
+    ],
+    "correct_answer": "RJ45",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What does a slicer do in 3D printing?",
+    "options": [
+      "Converts model into print instructions",
+      "Removes viruses",
+      "Formats a hard drive",
+      "Controls keyboard shortcuts"
+    ],
+    "correct_answer": "Converts model into print instructions",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which generation of computers used integrated circuits?",
+    "options": [
+      "Third generation",
+      "First generation",
+      "Second generation",
+      "Fifth generation"
+    ],
+    "correct_answer": "Third generation",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What does the Insert key usually toggle?",
+    "options": [
+      "Insert and overwrite mode",
+      "Caps Lock and Num Lock",
+      "Wi-Fi and Bluetooth",
+      "Print and preview"
+    ],
+    "correct_answer": "Insert and overwrite mode",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which gate reverses a binary input?",
+    "options": [
+      "NOT",
+      "AND",
+      "OR",
+      "NAND"
+    ],
+    "correct_answer": "NOT",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which shortcut saves the current file?",
+    "options": [
+      "Ctrl + S",
+      "Ctrl + P",
+      "Ctrl + V",
+      "Ctrl + F"
+    ],
+    "correct_answer": "Ctrl + S",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "What is superposition in quantum computing?",
+    "options": [
+      "A qubit existing in combined states before measurement",
+      "A printer printing on both sides",
+      "A document split into two columns",
+      "A file stored in two folders"
+    ],
+    "correct_answer": "A qubit existing in combined states before measurement",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which software type helps the OS communicate with hardware?",
+    "options": [
+      "Device driver",
+      "Spreadsheet",
+      "Paint program",
+      "Presentation app"
+    ],
+    "correct_answer": "Device driver",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "multiple",
+    "question_text": "Which key moves the document view one screen upward?",
+    "options": [
+      "Page Up",
+      "Page Down",
+      "End",
+      "Insert"
+    ],
+    "correct_answer": "Page Up",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "short",
+    "question_text": "What is the full meaning of BIOS? Answer in one word/phrase.",
+    "options": [],
+    "correct_answer": "Basic Input Output System",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "short",
+    "question_text": "Which common input device is used mainly for typing? Answer in one word.",
+    "options": [],
+    "correct_answer": "keyboard",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "short",
+    "question_text": "In which year did Ghana gain independence? Answer with the year only.",
+    "options": [],
+    "correct_answer": "1957",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "short",
+    "question_text": "What is the output of a NOT gate if the input is 1? Answer with one digit.",
+    "options": [],
+    "correct_answer": "0",
+    "marks": 1
+  },
+  {
+    "round": 1,
+    "category": "General",
+    "question_type": "short",
+    "question_text": "Which common output device prints hard copies? Answer in one word.",
+    "options": [],
+    "correct_answer": "printer",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which keyword defines a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda"
+    ],
+    "correct_answer": "def",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which data type stores key-value pairs?",
+    "options": [
+      "dictionary",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct_answer": "dictionary",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which symbol starts a comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "/*"
+    ],
+    "correct_answer": "#",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which keyword defines a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda"
+    ],
+    "correct_answer": "def",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which data type stores key-value pairs?",
+    "options": [
+      "dictionary",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct_answer": "dictionary",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which symbol starts a comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "/*"
+    ],
+    "correct_answer": "#",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which keyword defines a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda"
+    ],
+    "correct_answer": "def",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which data type stores key-value pairs?",
+    "options": [
+      "dictionary",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct_answer": "dictionary",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which symbol starts a comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "/*"
+    ],
+    "correct_answer": "#",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which keyword defines a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda"
+    ],
+    "correct_answer": "def",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which data type stores key-value pairs?",
+    "options": [
+      "dictionary",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct_answer": "dictionary",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which symbol starts a comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "/*"
+    ],
+    "correct_answer": "#",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which keyword defines a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "function",
+      "lambda"
+    ],
+    "correct_answer": "def",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which data type stores key-value pairs?",
+    "options": [
+      "dictionary",
+      "list",
+      "tuple",
+      "string"
+    ],
+    "correct_answer": "dictionary",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Python",
+    "question_type": "multiple",
+    "question_text": "Which symbol starts a comment in Python?",
+    "options": [
+      "#",
+      "//",
+      "<!--",
+      "/*"
+    ],
+    "correct_answer": "#",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "dim",
+      "varn",
+      "set"
+    ],
+    "correct_answer": "let",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which method prints to the browser console?",
+    "options": [
+      "console.log",
+      "print",
+      "echo",
+      "write.line"
+    ],
+    "correct_answer": "console.log",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which value means no value intentionally?",
+    "options": [
+      "null",
+      "zero",
+      "blank",
+      "voided"
+    ],
+    "correct_answer": "null",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "dim",
+      "varn",
+      "set"
+    ],
+    "correct_answer": "let",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which method prints to the browser console?",
+    "options": [
+      "console.log",
+      "print",
+      "echo",
+      "write.line"
+    ],
+    "correct_answer": "console.log",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which value means no value intentionally?",
+    "options": [
+      "null",
+      "zero",
+      "blank",
+      "voided"
+    ],
+    "correct_answer": "null",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "dim",
+      "varn",
+      "set"
+    ],
+    "correct_answer": "let",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which method prints to the browser console?",
+    "options": [
+      "console.log",
+      "print",
+      "echo",
+      "write.line"
+    ],
+    "correct_answer": "console.log",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which value means no value intentionally?",
+    "options": [
+      "null",
+      "zero",
+      "blank",
+      "voided"
+    ],
+    "correct_answer": "null",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "dim",
+      "varn",
+      "set"
+    ],
+    "correct_answer": "let",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which method prints to the browser console?",
+    "options": [
+      "console.log",
+      "print",
+      "echo",
+      "write.line"
+    ],
+    "correct_answer": "console.log",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which value means no value intentionally?",
+    "options": [
+      "null",
+      "zero",
+      "blank",
+      "voided"
+    ],
+    "correct_answer": "null",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "let",
+      "dim",
+      "varn",
+      "set"
+    ],
+    "correct_answer": "let",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which method prints to the browser console?",
+    "options": [
+      "console.log",
+      "print",
+      "echo",
+      "write.line"
+    ],
+    "correct_answer": "console.log",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "JavaScript",
+    "question_type": "multiple",
+    "question_text": "Which value means no value intentionally?",
+    "options": [
+      "null",
+      "zero",
+      "blank",
+      "voided"
+    ],
+    "correct_answer": "null",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which colour model is commonly used for screen design?",
+    "options": [
+      "RGB",
+      "CMYK only",
+      "BIOS",
+      "ASCII"
+    ],
+    "correct_answer": "RGB",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which file type supports transparency?",
+    "options": [
+      "PNG",
+      "JPG",
+      "MP3",
+      "TXT"
+    ],
+    "correct_answer": "PNG",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which tool is used to pick colours from an image?",
+    "options": [
+      "Eyedropper",
+      "Crop only",
+      "Eraser only",
+      "Lasso only"
+    ],
+    "correct_answer": "Eyedropper",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which colour model is commonly used for screen design?",
+    "options": [
+      "RGB",
+      "CMYK only",
+      "BIOS",
+      "ASCII"
+    ],
+    "correct_answer": "RGB",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which file type supports transparency?",
+    "options": [
+      "PNG",
+      "JPG",
+      "MP3",
+      "TXT"
+    ],
+    "correct_answer": "PNG",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which tool is used to pick colours from an image?",
+    "options": [
+      "Eyedropper",
+      "Crop only",
+      "Eraser only",
+      "Lasso only"
+    ],
+    "correct_answer": "Eyedropper",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which colour model is commonly used for screen design?",
+    "options": [
+      "RGB",
+      "CMYK only",
+      "BIOS",
+      "ASCII"
+    ],
+    "correct_answer": "RGB",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which file type supports transparency?",
+    "options": [
+      "PNG",
+      "JPG",
+      "MP3",
+      "TXT"
+    ],
+    "correct_answer": "PNG",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which tool is used to pick colours from an image?",
+    "options": [
+      "Eyedropper",
+      "Crop only",
+      "Eraser only",
+      "Lasso only"
+    ],
+    "correct_answer": "Eyedropper",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which colour model is commonly used for screen design?",
+    "options": [
+      "RGB",
+      "CMYK only",
+      "BIOS",
+      "ASCII"
+    ],
+    "correct_answer": "RGB",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which file type supports transparency?",
+    "options": [
+      "PNG",
+      "JPG",
+      "MP3",
+      "TXT"
+    ],
+    "correct_answer": "PNG",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which tool is used to pick colours from an image?",
+    "options": [
+      "Eyedropper",
+      "Crop only",
+      "Eraser only",
+      "Lasso only"
+    ],
+    "correct_answer": "Eyedropper",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which colour model is commonly used for screen design?",
+    "options": [
+      "RGB",
+      "CMYK only",
+      "BIOS",
+      "ASCII"
+    ],
+    "correct_answer": "RGB",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which file type supports transparency?",
+    "options": [
+      "PNG",
+      "JPG",
+      "MP3",
+      "TXT"
+    ],
+    "correct_answer": "PNG",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Graphic Designing",
+    "question_type": "multiple",
+    "question_text": "Which tool is used to pick colours from an image?",
+    "options": [
+      "Eyedropper",
+      "Crop only",
+      "Eraser only",
+      "Lasso only"
+    ],
+    "correct_answer": "Eyedropper",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which term describes points in a 3D mesh?",
+    "options": [
+      "vertices",
+      "pixels",
+      "slides",
+      "cells"
+    ],
+    "correct_answer": "vertices",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which file format is common for 3D printing?",
+    "options": [
+      "STL",
+      "DOCX",
+      "XLSX",
+      "MP3"
+    ],
+    "correct_answer": "STL",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which process adds bones to a model for animation?",
+    "options": [
+      "rigging",
+      "slicing",
+      "printing",
+      "scanning"
+    ],
+    "correct_answer": "rigging",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which term describes points in a 3D mesh?",
+    "options": [
+      "vertices",
+      "pixels",
+      "slides",
+      "cells"
+    ],
+    "correct_answer": "vertices",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which file format is common for 3D printing?",
+    "options": [
+      "STL",
+      "DOCX",
+      "XLSX",
+      "MP3"
+    ],
+    "correct_answer": "STL",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which process adds bones to a model for animation?",
+    "options": [
+      "rigging",
+      "slicing",
+      "printing",
+      "scanning"
+    ],
+    "correct_answer": "rigging",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which term describes points in a 3D mesh?",
+    "options": [
+      "vertices",
+      "pixels",
+      "slides",
+      "cells"
+    ],
+    "correct_answer": "vertices",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which file format is common for 3D printing?",
+    "options": [
+      "STL",
+      "DOCX",
+      "XLSX",
+      "MP3"
+    ],
+    "correct_answer": "STL",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which process adds bones to a model for animation?",
+    "options": [
+      "rigging",
+      "slicing",
+      "printing",
+      "scanning"
+    ],
+    "correct_answer": "rigging",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which term describes points in a 3D mesh?",
+    "options": [
+      "vertices",
+      "pixels",
+      "slides",
+      "cells"
+    ],
+    "correct_answer": "vertices",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which file format is common for 3D printing?",
+    "options": [
+      "STL",
+      "DOCX",
+      "XLSX",
+      "MP3"
+    ],
+    "correct_answer": "STL",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which process adds bones to a model for animation?",
+    "options": [
+      "rigging",
+      "slicing",
+      "printing",
+      "scanning"
+    ],
+    "correct_answer": "rigging",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which term describes points in a 3D mesh?",
+    "options": [
+      "vertices",
+      "pixels",
+      "slides",
+      "cells"
+    ],
+    "correct_answer": "vertices",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which file format is common for 3D printing?",
+    "options": [
+      "STL",
+      "DOCX",
+      "XLSX",
+      "MP3"
+    ],
+    "correct_answer": "STL",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "3D Modelling",
+    "question_type": "multiple",
+    "question_text": "Which process adds bones to a model for animation?",
+    "options": [
+      "rigging",
+      "slicing",
+      "printing",
+      "scanning"
+    ],
+    "correct_answer": "rigging",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What must you have before testing someone\u2019s system?",
+    "options": [
+      "authorization",
+      "guessing",
+      "brute force",
+      "spoofing"
+    ],
+    "correct_answer": "authorization",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "Which security principle protects data from unauthorized access?",
+    "options": [
+      "confidentiality",
+      "latency",
+      "resolution",
+      "rendering"
+    ],
+    "correct_answer": "confidentiality",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What does phishing usually try to steal?",
+    "options": [
+      "credentials",
+      "pixels",
+      "filament",
+      "fonts"
+    ],
+    "correct_answer": "credentials",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What must you have before testing someone\u2019s system?",
+    "options": [
+      "authorization",
+      "guessing",
+      "brute force",
+      "spoofing"
+    ],
+    "correct_answer": "authorization",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "Which security principle protects data from unauthorized access?",
+    "options": [
+      "confidentiality",
+      "latency",
+      "resolution",
+      "rendering"
+    ],
+    "correct_answer": "confidentiality",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What does phishing usually try to steal?",
+    "options": [
+      "credentials",
+      "pixels",
+      "filament",
+      "fonts"
+    ],
+    "correct_answer": "credentials",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What must you have before testing someone\u2019s system?",
+    "options": [
+      "authorization",
+      "guessing",
+      "brute force",
+      "spoofing"
+    ],
+    "correct_answer": "authorization",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "Which security principle protects data from unauthorized access?",
+    "options": [
+      "confidentiality",
+      "latency",
+      "resolution",
+      "rendering"
+    ],
+    "correct_answer": "confidentiality",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What does phishing usually try to steal?",
+    "options": [
+      "credentials",
+      "pixels",
+      "filament",
+      "fonts"
+    ],
+    "correct_answer": "credentials",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What must you have before testing someone\u2019s system?",
+    "options": [
+      "authorization",
+      "guessing",
+      "brute force",
+      "spoofing"
+    ],
+    "correct_answer": "authorization",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "Which security principle protects data from unauthorized access?",
+    "options": [
+      "confidentiality",
+      "latency",
+      "resolution",
+      "rendering"
+    ],
+    "correct_answer": "confidentiality",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What does phishing usually try to steal?",
+    "options": [
+      "credentials",
+      "pixels",
+      "filament",
+      "fonts"
+    ],
+    "correct_answer": "credentials",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What must you have before testing someone\u2019s system?",
+    "options": [
+      "authorization",
+      "guessing",
+      "brute force",
+      "spoofing"
+    ],
+    "correct_answer": "authorization",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "Which security principle protects data from unauthorized access?",
+    "options": [
+      "confidentiality",
+      "latency",
+      "resolution",
+      "rendering"
+    ],
+    "correct_answer": "confidentiality",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Ethical Hacking",
+    "question_type": "multiple",
+    "question_text": "What does phishing usually try to steal?",
+    "options": [
+      "credentials",
+      "pixels",
+      "filament",
+      "fonts"
+    ],
+    "correct_answer": "credentials",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which board is common for beginner electronics projects?",
+    "options": [
+      "Arduino",
+      "Excel",
+      "Photoshop",
+      "BIOS"
+    ],
+    "correct_answer": "Arduino",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which component detects distance in robotics?",
+    "options": [
+      "ultrasonic sensor",
+      "HDMI cable",
+      "CMOS battery",
+      "keyboard"
+    ],
+    "correct_answer": "ultrasonic sensor",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which LEGO robotics system is commonly used in schools?",
+    "options": [
+      "Mindstorms",
+      "WordArt",
+      "Power Query",
+      "PostScript"
+    ],
+    "correct_answer": "Mindstorms",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which board is common for beginner electronics projects?",
+    "options": [
+      "Arduino",
+      "Excel",
+      "Photoshop",
+      "BIOS"
+    ],
+    "correct_answer": "Arduino",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which component detects distance in robotics?",
+    "options": [
+      "ultrasonic sensor",
+      "HDMI cable",
+      "CMOS battery",
+      "keyboard"
+    ],
+    "correct_answer": "ultrasonic sensor",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which LEGO robotics system is commonly used in schools?",
+    "options": [
+      "Mindstorms",
+      "WordArt",
+      "Power Query",
+      "PostScript"
+    ],
+    "correct_answer": "Mindstorms",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which board is common for beginner electronics projects?",
+    "options": [
+      "Arduino",
+      "Excel",
+      "Photoshop",
+      "BIOS"
+    ],
+    "correct_answer": "Arduino",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which component detects distance in robotics?",
+    "options": [
+      "ultrasonic sensor",
+      "HDMI cable",
+      "CMOS battery",
+      "keyboard"
+    ],
+    "correct_answer": "ultrasonic sensor",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which LEGO robotics system is commonly used in schools?",
+    "options": [
+      "Mindstorms",
+      "WordArt",
+      "Power Query",
+      "PostScript"
+    ],
+    "correct_answer": "Mindstorms",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which board is common for beginner electronics projects?",
+    "options": [
+      "Arduino",
+      "Excel",
+      "Photoshop",
+      "BIOS"
+    ],
+    "correct_answer": "Arduino",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which component detects distance in robotics?",
+    "options": [
+      "ultrasonic sensor",
+      "HDMI cable",
+      "CMOS battery",
+      "keyboard"
+    ],
+    "correct_answer": "ultrasonic sensor",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which LEGO robotics system is commonly used in schools?",
+    "options": [
+      "Mindstorms",
+      "WordArt",
+      "Power Query",
+      "PostScript"
+    ],
+    "correct_answer": "Mindstorms",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which board is common for beginner electronics projects?",
+    "options": [
+      "Arduino",
+      "Excel",
+      "Photoshop",
+      "BIOS"
+    ],
+    "correct_answer": "Arduino",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which component detects distance in robotics?",
+    "options": [
+      "ultrasonic sensor",
+      "HDMI cable",
+      "CMOS battery",
+      "keyboard"
+    ],
+    "correct_answer": "ultrasonic sensor",
+    "marks": 1
+  },
+  {
+    "round": 2,
+    "category": "Robotics: Arduino & Mindstorm",
+    "question_type": "multiple",
+    "question_text": "Which LEGO robotics system is commonly used in schools?",
+    "options": [
+      "Mindstorms",
+      "WordArt",
+      "Power Query",
+      "PostScript"
+    ],
+    "correct_answer": "Mindstorms",
+    "marks": 1
+  },
+  {
+    "round": 3,
+    "category": "Microsoft Office",
+    "question_type": "multiple",
+    "question_text": "Which Microsoft Office app is mainly used for spreadsheets?",
+    "options": [
+      "Excel",
+      "Word",
+      "PowerPoint",
+      "Access"
+    ],
+    "correct_answer": "Excel",
+    "marks": 1
+  },
+  {
+    "round": 3,
+    "category": "Microsoft Office",
+    "question_type": "multiple",
+    "question_text": "Which shortcut usually saves a document?",
+    "options": [
+      "Ctrl + S",
+      "Ctrl + P",
+      "Ctrl + X",
+      "Ctrl + N"
+    ],
+    "correct_answer": "Ctrl + S",
+    "marks": 1
+  },
+  {
+    "round": 3,
+    "category": "Microsoft Office",
+    "question_type": "multiple",
+    "question_text": "Which Office app is mainly used for presentations?",
+    "options": [
+      "PowerPoint",
+      "Excel",
+      "Access",
+      "Outlook"
+    ],
+    "correct_answer": "PowerPoint",
+    "marks": 1
+  },
+  {
+    "round": 3,
+    "category": "Microsoft Office",
+    "question_type": "multiple",
+    "question_text": "Which Excel symbol usually begins a formula?",
+    "options": [
+      "=",
+      "#",
+      "@",
+      "&"
+    ],
+    "correct_answer": "=",
+    "marks": 1
+  },
+  {
+    "round": 3,
+    "category": "Microsoft Office",
+    "question_type": "multiple",
+    "question_text": "Which Word feature checks spelling mistakes?",
+    "options": [
+      "Spell check",
+      "Mail merge",
+      "Slide sorter",
+      "Pivot table"
+    ],
+    "correct_answer": "Spell check",
+    "marks": 1
+  },
+  {
+    "round": 4,
+    "category": "Club",
+    "question_type": "short",
+    "question_text": "Write the abbreviation of the club name.",
+    "options": [],
+    "correct_answer": "MCRC",
+    "marks": 1
+  },
+  {
+    "round": 4,
+    "category": "Club",
+    "question_type": "short",
+    "question_text": "How many total marks is this vetting scored over?",
+    "options": [],
+    "correct_answer": "50",
+    "marks": 1
+  },
+  {
+    "round": 4,
+    "category": "Club",
+    "question_type": "short",
+    "question_text": "Which round tests Microsoft Office knowledge?",
+    "options": [],
+    "correct_answer": "3",
+    "marks": 1
+  },
+  {
+    "round": 4,
+    "category": "Club",
+    "question_type": "short",
+    "question_text": "Which round allows category selection?",
+    "options": [],
+    "correct_answer": "2",
+    "marks": 1
+  },
+  {
+    "round": 4,
+    "category": "Club",
+    "question_type": "short",
+    "question_text": "What is the name shown on this vetting platform?",
+    "options": [],
+    "correct_answer": "MCRC VETTING",
+    "marks": 1
+  }
+]
