@@ -74,11 +74,19 @@ app.get("/api/settings", async (_req, res) => {
 
 app.get("/api/categories", async (_req, res) => {
   try {
-    const result = await query("SELECT name FROM categories WHERE is_active = TRUE ORDER BY name");
-    res.json(result.rows.map((r) => r.name));
+    const result = await query(
+      `SELECT id, name
+       FROM categories
+       WHERE is_active = TRUE
+       ORDER BY name`
+    );
+
+    res.json(result.rows);
   } catch (error) {
     console.error("Error loading categories:", error);
-    res.status(500).json({ error: "Failed to load categories. Run migrations and seed the database." });
+    res.status(500).json({
+      error: "Failed to load categories. Check DATABASE_URL and categories table.",
+    });
   }
 });
 
