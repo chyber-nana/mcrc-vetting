@@ -13,6 +13,16 @@ async function seed() {
     ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value
   `);
 
+
+  const categoryNames = [...new Set(questions.filter((q) => q.round === 2).map((q) => q.category))];
+  for (const name of categoryNames) {
+    await pool.query(
+      `INSERT INTO categories (name) VALUES ($1)
+       ON CONFLICT (name) DO UPDATE SET is_active = TRUE, updated_at = NOW()`,
+      [name]
+    );
+  }
+
   const existing = await pool.query("SELECT COUNT(*)::int AS count FROM questions");
   if (existing.rows[0].count > 0) {
     console.log("Questions already exist. Seed skipped to avoid duplicates.");

@@ -74,11 +74,11 @@ app.get("/api/settings", async (_req, res) => {
 
 app.get("/api/categories", async (_req, res) => {
   try {
-    const result = await query("SELECT DISTINCT category FROM questions WHERE round = 2 AND is_active = TRUE ORDER BY category");
-    res.json(result.rows.map((r) => r.category));
+    const result = await query("SELECT name FROM categories WHERE is_active = TRUE ORDER BY name");
+    res.json(result.rows.map((r) => r.name));
   } catch (error) {
     console.error("Error loading categories:", error);
-    res.status(500).json({ error: "Failed to load categories. Check DATABASE_URL and seeded questions." });
+    res.status(500).json({ error: "Failed to load categories. Run migrations and seed the database." });
   }
 });
 
@@ -186,6 +186,100 @@ app.post("/api/candidates/:candidateId/finish", async (req, res) => {
   res.json(updateResult.rows[0]);
 });
 
+
+app.get("/api/admin/categories", requireAdmin, async (_req, res) => {
+  try {
+    const result = await query(
+      `SELECT c.id, c.name, c.is_active AS "isActive",
+              COALESCE(COUNT(q.id), 0)::int AS "questionCount"
+       FROM categories c
+       LEFT JOIN questions q ON q.category = c.name AND q.round = 2 AND q.is_active = TRUE
+       WHERE c.is_active = TRUE
+       GROUP BY c.id, c.name, c.is_active
+       ORDER BY c.name`
+    );
+    res.json(result.rows);
+  } catch (error) {
+    console.error("Error loading admin categories:", error);
+    res.status(500).json({ error: "Failed to load categories." });
+  }
+});
+
+app.post("/api/admin/categories", requireAdmin, async (req, res) => {
+  const name = String(req.body?.name || "").trim();
+  if (!name) return res.status(400).json({ error: "Category name is required." });
+
+  try {
+    const result = await query(
+      `INSERT INTO categories (name) VALUES ($1)
+       ON CONFLICT (name) DO UPDATE SET is_active = TRUE, updated_at = NOW()
+       RETURNING id, name, is_active AS "isActive"`,
+      [name]
+    );
+    res.status(201).json(result.rows[0]);
+  } catch (error) {
+    console.error("Error adding category:", error);
+    res.status(500).json({ error: "Failed to add category." });
+  }
+});
+
+app.put("/api/admin/categories/:id", requireAdmin, async (req, res) => {
+  const { id } = req.params;
+  const newName = String(req.body?.name || "").trim();
+  if (!newName) return res.status(400).json({ error: "Category name is required." });
+
+  const client = await pool.connect();
+  try {
+    await client.query("BEGIN");
+    const existing = await client.query("SELECT name FROM categories WHERE id = $1 AND is_active = TRUE", [id]);
+    if (existing.rows.length === 0) {
+      await client.query("ROLLBACK");
+      return res.status(404).json({ error: "Category not found." });
+    }
+
+    const oldName = existing.rows[0].name;
+    const duplicate = await client.query("SELECT id FROM categories WHERE LOWER(name) = LOWER($1) AND id <> $2", [newName, id]);
+    if (duplicate.rows.length > 0) {
+      await client.query("ROLLBACK");
+      return res.status(409).json({ error: "Another category already uses that name." });
+    }
+
+    const updated = await client.query(
+      `UPDATE categories SET name = $1, updated_at = NOW()
+       WHERE id = $2
+       RETURNING id, name, is_active AS "isActive"`,
+      [newName, id]
+    );
+
+    await client.query("UPDATE questions SET category = $1, updated_at = NOW() WHERE round = 2 AND category = $2", [newName, oldName]);
+    await client.query("UPDATE candidates SET round2_category = $1 WHERE round2_category = $2", [newName, oldName]);
+    await client.query("COMMIT");
+    res.json(updated.rows[0]);
+  } catch (error) {
+    await client.query("ROLLBACK");
+    console.error("Error renaming category:", error);
+    res.status(500).json({ error: "Failed to rename category." });
+  } finally {
+    client.release();
+  }
+});
+
+app.delete("/api/admin/categories/:id", requireAdmin, async (req, res) => {
+  try {
+    const result = await query(
+      `UPDATE categories SET is_active = FALSE, updated_at = NOW()
+       WHERE id = $1
+       RETURNING id, name, is_active AS "isActive"`,
+      [req.params.id]
+    );
+    if (result.rows.length === 0) return res.status(404).json({ error: "Category not found." });
+    res.json({ deleted: true, category: result.rows[0] });
+  } catch (error) {
+    console.error("Error deleting category:", error);
+    res.status(500).json({ error: "Failed to delete category." });
+  }
+});
+
 app.get("/api/admin/questions", requireAdmin, async (req, res) => {
   const { round, category } = req.query;
   const params = [];
@@ -199,6 +293,13 @@ app.get("/api/admin/questions", requireAdmin, async (req, res) => {
 
 app.post("/api/admin/questions", requireAdmin, async (req, res) => {
   const { round, category = "General", questionType, questionText, options = [], correctAnswer, marks = 1 } = req.body;
+  if (Number(round) === 2 && String(category || "").trim()) {
+    await query(
+      `INSERT INTO categories (name) VALUES ($1)
+       ON CONFLICT (name) DO UPDATE SET is_active = TRUE, updated_at = NOW()`,
+      [String(category).trim()]
+    );
+  }
   const result = await query(
     `INSERT INTO questions (round, category, question_type, question_text, options, correct_answer, marks)
      VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *`,

@@ -5,6 +5,15 @@ CREATE TABLE IF NOT EXISTS settings (
   value JSONB NOT NULL
 );
 
+
+CREATE TABLE IF NOT EXISTS categories (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  name TEXT NOT NULL UNIQUE,
+  is_active BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
 CREATE TABLE IF NOT EXISTS questions (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   round INTEGER NOT NULL CHECK (round IN (1,2,3,4)),
@@ -56,3 +65,16 @@ CREATE TABLE IF NOT EXISTS answers (
 CREATE INDEX IF NOT EXISTS idx_questions_round_category ON questions(round, category);
 CREATE INDEX IF NOT EXISTS idx_answers_candidate ON answers(candidate_id);
 CREATE INDEX IF NOT EXISTS idx_candidate_round_questions_candidate ON candidate_round_questions(candidate_id, round);
+
+INSERT INTO categories (name)
+SELECT DISTINCT category FROM questions WHERE round = 2
+ON CONFLICT (name) DO NOTHING;
+
+INSERT INTO categories (name) VALUES
+('Python'),
+('JavaScript'),
+('Graphic Designing'),
+('3D Modelling'),
+('Cyber Security'),
+('Robotics: Arduino & Mindstorm')
+ON CONFLICT (name) DO NOTHING;
